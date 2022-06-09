@@ -21,7 +21,10 @@ class ClientsController < ApplicationController
 
   # POST /clients or /clients.json
   def create
+    #@user_datum = UserDatum.find(params[:personals_id])
     @client = Client.new(client_params)
+
+    #@client.personals_id = @user_datum.id
 
     respond_to do |format|
       if @client.save

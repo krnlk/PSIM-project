@@ -1,3 +1,5 @@
 class Malfunction < ApplicationRecord
-    belongs_to :track
+    def change
+        belongs_to :track
+    end
 end

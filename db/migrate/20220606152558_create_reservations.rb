@@ -9,6 +9,10 @@ class CreateReservations < ActiveRecord::Migration[7.0]
       t.integer :track_id
       t.integer :shoes_id
       t.integer :client_id
+      t.references :price_list, foreign_key: true
+      t.references :track, foreign_key: true
+      t.references :shoe, foreign_key: true
+      t.references :client, foreign_key: true
 
       t.timestamps
     end

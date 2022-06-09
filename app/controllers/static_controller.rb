@@ -1,6 +1,7 @@
 class StaticController < ApplicationController
     def index
         @some_variable = 123
-        @reservations = Reservation.all
+        @clients = Client.all
+
     end
 end

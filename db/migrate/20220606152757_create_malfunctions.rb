@@ -7,6 +7,7 @@ class CreateMalfunctions < ActiveRecord::Migration[7.0]
       t.time :time_from
       t.time :time_to
       t.string :comment
+      t.references :malfunction, foreign_key: true
 
       t.timestamps
     end

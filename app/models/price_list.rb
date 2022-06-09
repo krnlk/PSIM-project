@@ -1,3 +1,5 @@
 class PriceList < ApplicationRecord
-    has_many :reservations
+    def change
+        has_many :reservations
+    end
 end

@@ -1,3 +1,5 @@
 class Shoe < ApplicationRecord
-    has_one :reservation
+    def change
+        has_one :reservation
+    end
 end

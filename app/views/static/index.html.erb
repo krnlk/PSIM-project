@@ -15,4 +15,12 @@ non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 <% end %>
 </ul>
 
+<ul>
+<% @clients.each do |client| %>
+    <%= link_to client do %>
+        <li><%= client.personals_id %></li>
+    <% end %>
+<% end %>
+</ul>
+
 </p>
