@@ -1,5 +1,5 @@
 class Shoe < ApplicationRecord
-    def change
+    #def change
         has_one :reservation
-    end
+    #end
 end

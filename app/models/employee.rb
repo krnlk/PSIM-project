@@ -1,5 +1,6 @@
 class Employee < ApplicationRecord
-    def change
-        belongs_to :UserDatum
-    end
+    #def change
+        #has_one :user_datum
+        belongs_to :user_datum
+    #end
 end

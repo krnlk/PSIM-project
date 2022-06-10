@@ -1,5 +1,7 @@
 class CreateUserData < ActiveRecord::Migration[7.0]
   def change
+    #create_table :employees do |t|
+
     create_table :user_data do |t|
       t.integer :personals_id
       t.string :first_name
@@ -7,6 +9,7 @@ class CreateUserData < ActiveRecord::Migration[7.0]
       t.string :login
       t.string :password
       t.string :email
+      #t.references :employee, null: false, foreign_key: true
 
       t.timestamps
     end
