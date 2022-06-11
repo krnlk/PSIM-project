@@ -65,6 +65,7 @@ class PriceListsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def price_list_params
+      #params.require(:price_list).permit(:price_id, :price, :item_type, :weekday, :time_from, :time_to, :current)
       params.require(:price_list).permit(:price_id, :price, :item_type, :weekday, :time_from, :time_to, :current)
     end
 end

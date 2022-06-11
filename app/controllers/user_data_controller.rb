@@ -65,6 +65,7 @@ class UserDataController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def user_datum_params
-      params.require(:user_datum).permit(:personals_id, :first_name, :last_name, :login, :password, :email)
+      #params.require(:user_datum).permit(:personals_id, :first_name, :last_name, :login, :password, :email)
+      params.require(:user_datum).permit(:personals_id, :first_name, :last_name, :login, :email, :password, :password_confirmation)
     end
 end

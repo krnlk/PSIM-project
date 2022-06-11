@@ -65,6 +65,7 @@ class MalfunctionsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def malfunction_params
-      params.require(:malfunction).permit(:malfunction_id, :track_id, :date, :time_from, :time_to, :comment)
+      #params.require(:malfunction).permit(:malfunction_id, :track_id, :date, :time_from, :time_to, :comment)
+      params.require(:malfunction).permit(:date, :time_from, :time_to, :comment)
     end
 end

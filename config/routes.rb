@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  root to: 'static#index'
+
+  get    '/login',   to: 'sessions#new'
+  post   '/login',   to: 'sessions#create'
+  delete '/logout',  to: 'sessions#destroy'
+  get    '/feed',   to: 'static#feed'
+
   resources :user_data
   resources :clients
   resources :shoes
@@ -11,5 +18,4 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  root to: 'static#index'
 end

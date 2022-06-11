@@ -7,7 +7,7 @@ class CreateUserData < ActiveRecord::Migration[7.0]
       t.string :first_name
       t.string :last_name
       t.string :login
-      t.string :password
+      #t.string :password
       t.string :email
       #t.references :employee, null: false, foreign_key: true
 

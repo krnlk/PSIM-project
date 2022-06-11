@@ -65,6 +65,7 @@ class ShoesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def shoe_params
-      params.require(:shoe).permit(:shoes_id, :size)
+      #params.require(:shoe).permit(:shoes_id, :size)
+      params.require(:shoe).permit(:size)
     end
 end

@@ -1,4 +1,4 @@
-<h1>Strona główna</h1>
+<h1>Main page</h1>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -9,18 +9,5 @@ non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 <%= Time.now %>
 <h1><%= @some_variable %></h1>
 
-<ul>
-<% @reservations.each do |reservation| %>
-    <li><%= reservation.date %> <%= reservation.price_id %> <%= reservation.shoes_id %> <%= reservation.time_from %> <%= reservation.time_to %></li>
-<% end %>
-</ul>
-
-<ul>
-<% @clients.each do |client| %>
-    <%= link_to client do %>
-        <li><%= client.personals_id %></li>
-    <% end %>
-<% end %>
-</ul>
-
 </p>
+
