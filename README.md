@@ -7,5 +7,5 @@ Jak odpalić:
 - komenda **ruby bin/rails server**
 
 FAQ
-Q: Nie wyświetla mi się komponent zegara/czasu.
+Q: Nie wyświetla mi się komponent zegara/czasu.\n
 A: Spróbuj uruchomić local hosta na innej przeglądarce.
